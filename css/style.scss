@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+/*
+Theme Name: Riccell Design
+Theme URI: http://www.riccellidesign.com
+Author:  Michael Riccelli
+Description: Riccelli Design is a custom designed website for the purposes of marketing website builds
+Version: 1.0
+*/
+
+
+/*
+| 1. Color Variables
+_________________________________________________________________ */
+
+/* SCSS Color variables will start with rweb_*/
+   $rweb_body_color: #666666;
+   $rweb_light_grey: #808080;
+   $rweb_lightblue: #d3e4f6;
+   $rweb_bluegrey: #69afcd;
+   $rweb_saturated_orange: #ceba69;
+
+/* SCSS Font variables also start with rweb_
+   font-family: 'Roboto', sans-serif;
+   font-family: 'Open Sans', sans-serif;
+*/
+  $rweb_body_font: 'Open Sans', sans-serif;
+  $rweb_header_font: 'Roboto', sans-serif;
+
+
+
+html, body {
+  height: 100%;
+}
+body {
+  background: #ffffff;
+  position: relative;
+}
+p {
+  font-family: $rweb_body_font;
+  color: $rweb_body_color;
+  margin: 0 0 15px;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: $rweb_header_font; 
+}
+a {
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  border-bottom: dotted 1px $rweb_body_color;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom-color: transparent !important;
+  color: $rweb_bluegrey;
+  text-decoration: none;
+}
+
+h1 {
+	font-size: 2.25em;
+	line-height: 1.35em;
+}
+
+h2 {
+	font-size: 2em;
+	line-height: 1.35em;
+}
+
+h3 {
+	font-size: 1.35em;
+	line-height: 1.5em;
+}
+
+h4 {
+	font-size: 1.25em;
+	line-height: 1.5em;
+}
+
+h5 {
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+h6 {
+	font-size: 0.7em;
+	line-height: 1.5em;
+}
+
+button.navbar-toggler {
+  border: none;
+  position: relative;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+.navbar-toggler span {
+   display: block;
+   background-color: #444;
+   height: 3px;
+   width: 25px;
+   margin-top: 4px;
+   margin-bottom: 4px;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   position: relative;
+   left: 0;
+   opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+   -webkit-transition: transform .35s ease-in-out;
+   -moz-transition: transform .35s ease-in-out;
+   -o-transition: transform .35s ease-in-out;
+   transition: transform .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}
+a.nav-link {
+  border-bottom: none;
+  margin-right: 1rem;
+}
+a.nav-link:hover {
+  color: $rweb_bluegrey;
+}
+a.navbar-brand {
+  border-bottom:none !important;
+  img {
+    width: 180px;
+  }
+}
+.hero {
+  background: url('../../img/sketch-work-shot.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+   h2 {
+    font-size: 35px;
+    font-family: $rweb_body_font;
+   } 
+   p {
+    color: $rweb_light_grey;
+    font-size: 1.2rem;
+   }
+}
+@media (min-width:640px){
+  .hero {
+    h2 {
+      font-size: 55px;
+    }
+  }
+}
+@media (min-width:768px){
+  .hero {
+    h2 {
+      font-size: 55px;
+    }
+  }
+}
+
+@media (min-width:880px){
+  .hero {
+    h2 {
+      font-size: 60px;
+    }
+  }
+}
