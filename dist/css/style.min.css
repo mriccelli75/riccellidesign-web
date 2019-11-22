@@ -21,6 +21,7 @@ html, body {
 body {
   background: #ffffff;
   position: relative;
+  color: #666666;
 }
 
 p {
@@ -31,6 +32,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
+  color: #666666;
 }
 
 a {
@@ -151,10 +153,36 @@ a.navbar-brand img {
   width: 180px;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: #69afcd;
+  border-color: #69afcd;
+  width: 80%;
+}
+
+.btn-primary:hover {
+  background: #347d9c;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background: #347d9c;
+  background: #347d9c;
+}
+
+section {
+  position: relative;
+  padding: 5rem 0;
+}
+
+.content {
+  position: relative;
+}
+
 .hero {
   background: url("../../img/sketch-work-shot.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
   height: 100vh;
 }
 
@@ -164,7 +192,7 @@ a.navbar-brand img {
 }
 
 .hero p {
-  color: #808080;
+  color: #9c9c9c;
   font-size: 1.2rem;
 }
 
@@ -184,4 +212,58 @@ a.navbar-brand img {
   .hero h2 {
     font-size: 60px;
   }
+}
+
+.lined::after {
+  content: '';
+  display: block;
+  width: 6.25rem;
+  height: 2px;
+  margin: 1.25rem auto;
+  background: #69afcd;
+}
+
+.content.content--hero {
+  text-align: center;
+  color: #fff;
+  background-image: url(../../img/computer-work-shot.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+.content.content--hero p {
+  color: #fff;
+}
+
+#capabilities h2,
+#capabilities h3,
+#capabilities h4 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+#capabilities h2 {
+  font-size: 3.25rem;
+}
+
+.icon {
+  width: 90px;
+  margin: 1rem auto;
+}
+
+li.list-inline-item {
+  width: 90px;
+  height: auto;
+}
+
+[data-animate] {
+  visibility: hidden;
+}
+
+.animated {
+  visibility: visible;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }

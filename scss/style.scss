@@ -14,7 +14,7 @@ _________________________________________________________________ */
 
 /* SCSS Color variables will start with rweb_*/
    $rweb_body_color: #666666;
-   $rweb_light_grey: #808080;
+   $rweb_light_grey: #9c9c9c;
    $rweb_lightblue: #d3e4f6;
    $rweb_bluegrey: #69afcd;
    $rweb_saturated_orange: #ceba69;
@@ -26,14 +26,13 @@ _________________________________________________________________ */
   $rweb_body_font: 'Open Sans', sans-serif;
   $rweb_header_font: 'Roboto', sans-serif;
 
-
-
 html, body {
   height: 100%;
 }
 body {
   background: #ffffff;
   position: relative;
+  color: $rweb_body_color;
 }
 p {
   font-family: $rweb_body_font;
@@ -41,7 +40,8 @@ p {
   margin: 0 0 15px;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: $rweb_header_font; 
+  font-family: $rweb_header_font;
+  color: $rweb_body_color; 
 }
 a {
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -159,11 +159,38 @@ a.navbar-brand {
     width: 180px;
   }
 }
+.btn-primary {
+  color: #fff;
+  background-color: $rweb_bluegrey;
+  border-color: $rweb_bluegrey;
+  width: 80%;
+ 
+    &:hover {
+      background: darken($rweb_bluegrey, 20%);
+    }
+
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background: darken($rweb_bluegrey, 20%);
+  background: darken($rweb_bluegrey, 20%);
+}
+
+section {
+  position: relative;
+  padding: 5rem 0;
+  
+}
+.content {
+  position: relative;
+}
 .hero {
   background: url('../../img/sketch-work-shot.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
   height: 100vh;
+
    h2 {
     font-size: 35px;
     font-family: $rweb_body_font;
@@ -194,4 +221,59 @@ a.navbar-brand {
       font-size: 60px;
     }
   }
+}
+.lined::after {
+  content: '';
+  display: block;
+  width: 6.25rem;
+  height: 2px;
+  margin: 1.25rem auto;
+  background: $rweb_bluegrey;
+}
+
+.content.content--hero {
+  text-align: center;
+  color: #fff;
+  background-image: url(../../img/computer-work-shot.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.content.content--hero {
+  p {
+    color: #fff;
+  }
+}
+#capabilities h2,
+#capabilities h3,
+#capabilities h4 {
+  font-family: $rweb_header_font;
+  color: #fff;
+}
+#capabilities h2
+ {
+  font-size: 3.25rem;
+}
+.icon {
+  width: 90px;
+  margin: 1rem auto;
+  
+}
+
+li.list-inline-item {
+  width: 90px;
+  height: auto;
+}
+[data-animate] {
+  visibility: hidden;
+}
+
+.animated {
+  visibility: visible;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }

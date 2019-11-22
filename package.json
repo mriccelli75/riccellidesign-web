@@ -1,0 +1,24 @@
+{
+  "name": "riccelliweb",
+  "version": "1.0.0",
+  "description": "riccelli web design service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mriccelli75/riccellidesign-web.git"
+  },
+  "author": "Michael Riccelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mriccelli75/riccellidesign-web/issues"
+  },
+  "homepage": "https://github.com/mriccelli75/riccellidesign-web#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
