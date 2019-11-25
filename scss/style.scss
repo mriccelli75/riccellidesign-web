@@ -89,7 +89,9 @@ button.navbar-toggler {
   border: none;
   position: relative;
 }
-
+.navbar {
+  background: white;
+}
 .navbar-toggler:focus,
 .navbar-toggler:active {
     outline: 0;
@@ -163,7 +165,9 @@ a.navbar-brand {
   color: #fff;
   background-color: $rweb_bluegrey;
   border-color: $rweb_bluegrey;
-  width: 80%;
+  padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
  
     &:hover {
       background: darken($rweb_bluegrey, 20%);
@@ -183,17 +187,24 @@ section {
 }
 .content {
   position: relative;
+  padding-bottom: 3rem;
+}
+.content.content--header {
+  margin-bottom:1rem;
 }
 .hero {
   background: url('../../img/sketch-work-shot.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
-  height: 100vh;
+  padding-top:120px;
+  
 
    h2 {
     font-size: 35px;
     font-family: $rweb_body_font;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.2;
    } 
    p {
     color: $rweb_light_grey;
@@ -248,6 +259,9 @@ section {
     color: #fff;
   }
 }
+.content.content--capabilities {
+  padding: 1rem .5rem;
+}
 #capabilities h2,
 #capabilities h3,
 #capabilities h4 {
@@ -264,10 +278,6 @@ section {
   
 }
 
-li.list-inline-item {
-  width: 90px;
-  height: auto;
-}
 [data-animate] {
   visibility: hidden;
 }
@@ -276,4 +286,9 @@ li.list-inline-item {
   visibility: visible;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
+}
+
+.post-thumbnail {
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
