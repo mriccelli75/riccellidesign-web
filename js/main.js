@@ -26,12 +26,12 @@
       });
     sr.reveal('.content.content--image', {
       duration: 2000,
-      delay: 2000,
+      delay: 1000,
       origin:'bottom'
     });
     // Headline still
     ScrollReveal().reveal('#capabilities .title')
-    ScrollReveal().reveal('#capabilities .capabilities-web', {duration: 2000, delay: 500 })
+    ScrollReveal().reveal('#capabilities .capabilities-web', {duration: 1000, delay: 500 })
     ScrollReveal().reveal('#capabilities .capabilities-ecom', {duration: 2000, delay: 600 })
-    ScrollReveal().reveal('#capabilities .capabilities-ux', {duration: 2000, delay: 700 })
+    ScrollReveal().reveal('#capabilities .capabilities-ux', {duration: 3000, delay: 700 })
 
