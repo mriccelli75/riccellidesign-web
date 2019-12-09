@@ -284,3 +284,7 @@ section {
   margin-bottom: 1rem;
   padding: 1rem;
 }
+
+section#call-to-action h2 {
+  color: white;
+}
