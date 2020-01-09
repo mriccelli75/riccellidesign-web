@@ -91,6 +91,9 @@ button.navbar-toggler {
 }
 .navbar {
   background: white;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
 }
 .navbar-toggler:focus,
 .navbar-toggler:active {
@@ -152,7 +155,11 @@ a.nav-link {
   border-bottom: none;
   margin-right: 1rem;
 }
+
 a.nav-link:hover {
+  color: $rweb_bluegrey;
+}
+a.nav-link.active {
   color: $rweb_bluegrey;
 }
 a.navbar-brand {
@@ -183,11 +190,9 @@ a.navbar-brand {
 section {
   position: relative;
   padding: 5rem 0;
-  
 }
 .content {
   position: relative;
-  padding-bottom: 3rem;
 }
 .content.content--header {
   margin-bottom:1rem;
@@ -295,4 +300,24 @@ section {
 
 section#call-to-action h2 {
   color: white;
+  margin-bottom:3rem;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+  border-radius: 100%;
+  outline: 0;
+  background-color: #347d9c;
+  text-align: center;
+}
+.content.content--about {
+  margin-top: 5rem;
 }
