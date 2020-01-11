@@ -310,6 +310,7 @@ ul.social-buttons li a {
   text-align: center;
 }
 
-.content.content--about {
+.content.content--about,
+.content.content--expertise {
   margin-top: 5rem;
 }
